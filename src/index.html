@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>JSON Thing</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+<div id="tryit" style="" class="content">
+        <div class="current"> Current Selector (click to edit): <input type="text"><span class="results">1 match</span></div>
+        <div>
+            <h3>JSON Input</h3>
+            <textarea></textarea>
+        </div>
+
+
+        <pre class="doc json">[
+    {
+        "id": "0001",
+        "type": "donut",
+        "name": "Cake",
+        "ppu": 0.55,
+        "batters": {
+            "batter": [
+                {
+                    "id": "1001",
+                    "type": "Regular"
+                },
+                {
+                    "id": "1002",
+                    "type": "Chocolate"
+                },
+                {
+                    "id": "1003",
+                    "type": "Blueberry"
+                },
+                {
+                    "id": "1004",
+                    "type": "Devil's Food"
+                }
+            ]
+        },
+        "topping": [
+            {
+                "id": "5001",
+                "type": "None"
+            },
+            {
+                "id": "5002",
+                "type": "Glazed"
+            },
+            {
+                "id": "5005",
+                "type": "Sugar"
+            },
+            {
+                "id": "5007",
+                "type": "Powdered Sugar"
+            },
+            {
+                "id": "5006",
+                "type": "Chocolate with Sprinkles"
+            },
+            {
+                "id": "5003",
+                "type": "Chocolate"
+            },
+            {
+                "id": "5004",
+                "type": "Maple"
+            }
+        ]
+    },
+    {
+        "id": "0002",
+        "type": "donut",
+        "name": "Raised",
+        "ppu": 0.55,
+        "batters": {
+            "batter": [
+                {
+                    "id": "1001",
+                    "type": "Regular"
+                }
+            ]
+        },
+        "topping": [
+            {
+                "id": "5001",
+                "type": "None"
+            },
+            {
+                "id": "5002",
+                "type": "Glazed"
+            },
+            {
+                "id": "5005",
+                "type": "Sugar"
+            },
+            {
+                "id": "5003",
+                "type": "Chocolate"
+            },
+            {
+                "id": "5004",
+                "type": "Maple"
+            }
+        ]
+    },
+    {
+        "id": "0003",
+        "type": "donut",
+        "name": "Old Fashioned",
+        "ppu": 0.55,
+        "batters": {
+            "batter": [
+                {
+                    "id": "1001",
+                    "type": "Regular"
+                },
+                {
+                    "id": "1002",
+                    "type": "Chocolate"
+                }
+            ]
+        },
+        "topping": [
+            {
+                "id": "5001",
+                "type": "None"
+            },
+            {
+                "id": "5002",
+                "type": "Glazed"
+            },
+            {
+                "id": "5003",
+                "type": "Chocolate"
+            },
+            {
+                "id": "5004",
+                "type": "Maple"
+            }
+        ]
+    }
+]</pre>
+        <div class="selectors">
+          <div class="title"> Choose A Selector... </div>
+          <div class="selector inuse">.batters .type</div>
+          <div class="selector">.topping</div>
+          <div class="selector">string</div>
+          <div class="selector">string:last-child</div>
+          <div class="selector">string:nth-child(-n+2)</div>
+          <div class="selector">string:nth-child(odd)</div>
+          <div class="selector">string:nth-last-child(1)</div>
+          <div class="selector">:root</div>
+          <div class="selector">number</div>
+          <div class="selector">:has(:root &gt; .type)</div>
+          <div class="selector">.topping ~ .id</div>
+          <div class="selector">.batter :has(.type:val("Spanish"))</div>
+        </div>
+      </div>
+
+
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script src="lib/jquery.ba-hashchange.js"></script>
+<script src="lib/jsonselect.js"></script>
+<script src="lib/showdown.js"></script>
+<script src="editor.js"></script>
+</body>
+
+
+
+</html>
