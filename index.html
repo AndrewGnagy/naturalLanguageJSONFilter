@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html lang="en">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>JSON Thing</title>
+    <link href="src/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div id="tryit" style="" class="content">
+        <div class="current"> Current Path (click to edit): <input type="text"><span class="results">1 match</span></div>
+        <div>
+            <h3>JSON Input</h3>
+            <textarea id="jsonIn"></textarea>
+        </div>
+
+
+        <pre id="doc" class="doc json"></pre>
+        <div id="selectors">
+          <div class="title"> Choose A Selector... </div>
+          <div class="selector inuse">$</div>
+          <div class="selector">$[1]</div>
+          <div class="selector">$[1].topping</div>
+          <div class="selector">$..topping</div>
+          <div class="selector">$..topping[0:3]</div>
+          <div class="selector">$[-1:]</div>
+          <div class="selector">$[1].topping..type</div>
+          <div class="selector">$..type</div>
+          <div class="selector">$..topping..[?(@.type=="Chocolate")].id</div>
+          <div class="selector">$..[?(@.name=="Cake" || @.name=="Old Fashioned")]..batter</div>
+          
+        </div>
+      </div>
+
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/jsonpath/jsonpath.min.js"></script>
+      <script src="src/default.js"></script>
+      <script src="src/index.js"></script>
+</body>
+</html>

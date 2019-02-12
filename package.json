@@ -1,0 +1,27 @@
+{
+  "name": "naturaljsonfilter",
+  "version": "1.0.0",
+  "description": "Using natural language to filter json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewGnagy/naturalLanguageJSONFilter.git"
+  },
+  "keywords": [
+    "json",
+    "jsonpath"
+  ],
+  "author": "Andrew Gnagy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndrewGnagy/naturalLanguageJSONFilter/issues"
+  },
+  "homepage": "https://github.com/AndrewGnagy/naturalLanguageJSONFilter#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jsonpath": "^1.0.0"
+  }
+}

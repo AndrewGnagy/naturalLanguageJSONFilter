@@ -1,38 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-
-        "http://www.w3.org/TR/html4/loose.dtd">
-
-
-
-<html lang="en">
-
-
-
-<head>
-
-
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-    <title>JSON Thing</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
-
-
-</head>
-
-
-
-<body>
-
-<div id="tryit" style="" class="content">
-        <div class="current"> Current Selector (click to edit): <input type="text"><span class="results">1 match</span></div>
-        <div>
-            <h3>JSON Input</h3>
-            <textarea class="jsonIn"></textarea>
-        </div>
-
-
-        <pre class="doc json">[
+JSON_BODY_DEFAULT = [
     {
         "id": "0001",
         "type": "donut",
@@ -161,32 +127,4 @@
             }
         ]
     }
-]</pre>
-        <div class="selectors">
-          <div class="title"> Choose A Selector... </div>
-          <div class="selector inuse">.batters .type</div>
-          <div class="selector">.topping</div>
-          <div class="selector">string</div>
-          <div class="selector">string:last-child</div>
-          <div class="selector">string:nth-child(-n+2)</div>
-          <div class="selector">string:nth-child(odd)</div>
-          <div class="selector">string:nth-last-child(1)</div>
-          <div class="selector">:root</div>
-          <div class="selector">number</div>
-          <div class="selector">:has(:root &gt; .type)</div>
-          <div class="selector">.topping ~ .id</div>
-          <div class="selector">.batter :has(.type:val("Spanish"))</div>
-        </div>
-      </div>
-
-
-<script src="lib/jquery-1.11.3.min.js"></script>
-<script src="lib/jquery.ba-hashchange.js"></script>
-<script src="lib/jsonselect.js"></script>
-<script src="lib/showdown.js"></script>
-<script src="editor.js"></script>
-</body>
-
-
-
-</html>
+]

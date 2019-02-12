@@ -51,17 +51,8 @@ a:hover {
 }
 
 div.content {
-    max-width: 850px;
-    min-width: 675px;
+    max-width: 80%;
     margin: auto;
-}
-
-div#tryit {
-    min-width: 825px;
-}
-
-#splash {
-    max-width: 700px;
 }
 
 .json {
@@ -71,51 +62,6 @@ div#tryit {
     border-radius: 1em;
     -moz-border-radius: 1em;
     -webkit-border-radius: 1em;
-}
-
-#splash .sample {
-    width: 250px;
-    float: right;
-    margin-left: 1em;
-    margin-top: 3em;
-    font-size: 90%;
-}
-
-#doc {
-    margin-top: 140px;
-}
-
-#doc table {
-    width: 100%;
-}
-
-#doc table th {
-    background-color: #aaa;
-    color: #333;
-    padding: 10px;
-}
-
-#doc table tr td:first-child {
-    font-family: "andale mono",monospace;
-}
-
-#doc table td {
-    padding-top: 3px;
-}
-
-#splash .sample tt {
-    font-size: 90%;
-    padding: 0 .2em 0 .2em;
-}
-
-#splash .sample pre {
-    border-top: 1px dashed #aaa;
-    padding-top: 1em;
-}
-
-#splash .pitch {
-    padding-top: 2em;
-    font-size: 170%;
 }
 
 .selected {
@@ -153,14 +99,16 @@ div.current input {
     -webkit-border-radius: 4px;
 }
 
-pre.doc {
+#doc {
+    display:inline-block;
     float: right;
     padding: 1em 3em 1em 3em;
     padding-right: 160px;
     font-size: 90%;
+    width: 50%;
 }
 
-.selectors {
+#selectors {
     margin: 1em;
     background-color: #444;
     width: 300px;
@@ -170,14 +118,14 @@ pre.doc {
     -webkit-border-radius: 4px;
 
 }
-.selectors .selector {
+.selector {
     background-color: #333;
     padding: .4em;
     margin: 1px;
     cursor: pointer;
 }
 
-.selectors .selector.inuse {
+.selector.inuse {
     border: 1px solid #9f9;
     margin: -1px;
     margin-left: 0px;
